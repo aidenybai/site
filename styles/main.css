@@ -1,19 +1,25 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('../public/fonts/Proxima Nova Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'ACaslonPro Italic';
-  src: url('../public/fonts/ACaslonPro-Italic.otf') format('opentype');
-}
+@import url('../public/fonts/inter.css');
+@import url('../public/fonts/caslon.css');
 
 html {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 h1,
 h2,
 h3,
-h4 {
-  font-family: 'ACaslonPro Italic', sans-serif;
+h4,
+h5,
+h6 {
+  font-family: 'Caslon', sans-serif;
+}
+
+a {
+  color: rgba(113, 128, 150, 1) !important;
+}
+
+#canvas {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }

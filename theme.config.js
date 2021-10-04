@@ -23,6 +23,8 @@ export default {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="og:title" content="Aiden Bai" />
       <link rel="icon" type="image/png" href="/favicon.png" />
+      <script type="x-shader/x-fragment" id="shader-gradient" src="/gradient.frag"></script>
+      <script type="text/javascript" src="/shader.js" defer></script>
     </>
   ),
 };
