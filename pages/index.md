@@ -12,4 +12,4 @@ Started programming in elementary school and has since spent 6 years **tinkering
 
 [/twitter](https://twitter.com/aidenybai) · [/github](https://github.com/aidenybai) · [/linkedin](https://linkedin.com/in/aidenbai) · [/resume](https://www.figma.com/file/n4MkGYBP1CEc3LsXU9z1pT/Resume?node-id=0%3A1)
 
-<img style="display: none" src="https://hits.link/hits?url=https://aidenybai.com/" />
+<img id="hits" src="https://hits.link/hits?url=https://aidenybai.com/" />
