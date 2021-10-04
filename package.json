@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidenybai/site.git"
+  },
+  "author": "Aiden Bai <aiden.bai05@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aidenybai/site/issues"
+  },
+  "homepage": "https://aidenybai.com",
+  "dependencies": {
+    "next": "^11.1.2",
+    "nextra": "^1.1.0",
+    "nextra-theme-blog": "^0.1.6",
+    "prismjs": "^1.25.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
