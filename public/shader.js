@@ -11,7 +11,7 @@ if (!navigator.userAgentData.mobile) {
   let heightHandle;
   let seedHandle;
 
-  function update() {
+  const update = () => {
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
@@ -21,15 +21,15 @@ if (!navigator.userAgentData.mobile) {
     gl.uniform1f(heightHandle, gl.canvas.height);
     gl.uniform1f(seedHandle, (seed += 0.001));
     gl.drawArrays(gl.TRIANGLES, 0, 6);
-  }
+  };
 
-  function loop() {
+  const loop = () => {
     update();
 
     if (looping) requestAnimationFrame(loop);
-  }
+  };
 
-  function download(next) {
+  const download = (next) => {
     shaderVertex = gl.createShader(gl.VERTEX_SHADER);
     gl.shaderSource(
       shaderVertex,
@@ -45,9 +45,9 @@ if (!navigator.userAgentData.mobile) {
         gl.compileShader(shaderGradient);
         next();
       });
-  }
+  };
 
-  function setup() {
+  const setup = () => {
     const buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(
@@ -73,7 +73,7 @@ if (!navigator.userAgentData.mobile) {
     window.onresize = update;
     looping = true;
     requestAnimationFrame(loop);
-  }
+  };
 
   download(setup);
 }
