@@ -18,4 +18,11 @@ export default {
       `}</style>
     </small>
   ),
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="og:title" content="Aiden Bai" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+    </>
+  ),
 };
