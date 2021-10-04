@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Thoughts
+title: /thoughts
 date: 2021-10-03
 ---
 

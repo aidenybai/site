@@ -10,7 +10,7 @@ export default {
         MIT
       </abbr>{' '}
       <time>{YEAR}</time> © Aiden Bai.
-      <a href="mailto:aiden.bai05@gmail.com">Contact</a>
+      <a href="mailto:aiden.bai05@gmail.com">@</a>
       <style jsx>{`
         a {
           float: right;
