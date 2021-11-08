@@ -1,4 +1,4 @@
-const YEAR = new Date().getFullYear();
+const year = new Date().getFullYear();
 
 export default {
   footer: (
@@ -9,7 +9,7 @@ export default {
       >
         MIT
       </abbr>{' '}
-      <time>{YEAR}</time> © Aiden Bai.
+      <time>{year}</time> © Aiden Bai.
       <a href="mailto:aiden.bai05@gmail.com">@</a>
       <style jsx>{`
         a {

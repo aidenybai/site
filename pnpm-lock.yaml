@@ -1,12 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  next: 12.0.3
+  next: ^12.0.3
   nextra: ^1.1.0
   nextra-theme-blog: ^0.1.6
   prismjs: ^1.25.0
   react: ^17.0.2
   react-dom: ^17.0.2
+  use-game-of-life: ^1.0.0
 
 dependencies:
   next: 12.0.3_react-dom@17.0.2+react@17.0.2
@@ -15,6 +16,7 @@ dependencies:
   prismjs: 1.25.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  use-game-of-life: 1.0.0_react@17.0.2
 
 packages:
 
@@ -1473,6 +1475,10 @@ packages:
     hasBin: true
     dependencies:
       queue: 6.0.2
+    dev: false
+
+  /immer/5.3.6:
+    resolution: {integrity: sha512-pqWQ6ozVfNOUDjrLfm4Pt7q4Q12cGw2HUZgry4Q5+Myxu9nmHRkWBpI0J4+MK0AxbdFtdMTwEGVl7Vd+vEiK+A==}
     dev: false
 
   /inherits/2.0.4:
@@ -3563,6 +3569,16 @@ packages:
   /url-to-options/1.0.1:
     resolution: {integrity: sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=}
     engines: {node: '>= 4'}
+    dev: false
+
+  /use-game-of-life/1.0.0_react@17.0.2:
+    resolution: {integrity: sha512-fseXOOcegCvKyShUW2D9S36cPAEoCZxSBCFmRlpZOGiU7xeJZSBhrzzH80NmCNk2aJU8wQmH6TuoNgPv2kO96Q==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: ^16.8.6
+    dependencies:
+      immer: 5.3.6
+      react: 17.0.2
     dev: false
 
   /use-subscription/1.5.1_react@17.0.2:

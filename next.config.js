@@ -1,8 +1,5 @@
-const withNextra = require('nextra')({
+module.exports = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.js',
-});
-module.exports = {
-  distDir: 'build',
-  ...withNextra(),
-};
+  unstable_staticImage: true,
+})();
