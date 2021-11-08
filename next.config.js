@@ -4,6 +4,5 @@ const withNextra = require('nextra')({
 });
 module.exports = {
   distDir: 'build',
-  target: 'serverless',
   ...withNextra(),
 };
