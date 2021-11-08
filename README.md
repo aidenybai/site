@@ -4,7 +4,7 @@
 
 ## About
 
-This is where I host all my thoughts, ramblings, and information about me. The website is built using [Nextra](https://nextra.vercel.app/) using the `nextra-theme-docs` theme.
+This is where I host all my thoughts, poetry, and information about me. The website is built using [Nextra](https://nextra.vercel.app/) using the `nextra-theme-docs` theme.
 
 The awesome thing about this site is that everything related to the content is in a `md` or `mdx` file. This means you don't need to write a bunch of HTML just to get content to show up.
 
