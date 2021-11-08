@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "export": "next export"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
   },
   "homepage": "https://aidenybai.com",
   "dependencies": {
-    "next": "^11.1.2",
+    "next": "^12.0.3",
     "nextra": "^1.1.0",
     "nextra-theme-blog": "^0.1.6",
     "prismjs": "^1.25.0",
