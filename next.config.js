@@ -3,7 +3,7 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.js',
 });
 module.exports = {
-  distDir: 'out',
+  distDir: 'build',
   target: 'serverless',
   ...withNextra(),
 };
