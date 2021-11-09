@@ -8,6 +8,7 @@ export const GameOfLife = ({
   randomizeGrid,
   randomGridAlivePercent,
 }) => {
+  const [mounted, setMounted] = useState(false);
   const { grid, setCell, start } = useGameOfLife({
     updateInterval,
     gridRows,
@@ -16,31 +17,20 @@ export const GameOfLife = ({
     randomGridAlivePercent,
   });
 
-  const [mounted, setMounted] = useState(false);
-
   const mount = () => {
-    start();
     setMounted(true);
+    start();
   };
 
   return (
     <>
       {!mounted && mount()}
-      <div
-        className="App"
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(50 , 1fr)',
-          gridAutoRows: '13px',
-        }}
-      >
+      <div className="game" title="Conway's Game of Life">
         {grid.map((row, r) =>
-          row.map((_col, c) => (
+          row.map((_, c) => (
             <div
               key={`${r}-${c}`}
-              style={{
-                backgroundColor: grid[r][c] ? '#e2e8f0' : undefined,
-              }}
+              className={grid[r][c] ? 'alive' : undefined}
               onClick={() => {
                 setCell(r, c, !grid[r][c]);
               }}

@@ -115,3 +115,12 @@ article.prose pre code {
   display: inline-block;
   padding: 0;
 }
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr);
+  grid-auto-rows: 13px;
+}
+.game > .alive {
+  background: #e2e8f0;
+}
