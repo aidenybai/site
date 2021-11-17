@@ -10,12 +10,9 @@ export default {
         MIT
       </abbr>{' '}
       <time>{year}</time> © Aiden Bai.
-      <a href="mailto:aiden.bai05@gmail.com">@</a>
-      <style jsx>{`
-        a {
-          float: right;
-        }
-      `}</style>
+      <a style={{ float: 'right !important' }} href="mailto:aiden.bai05@gmail.com">
+        @
+      </a>
     </small>
   ),
   head: (
