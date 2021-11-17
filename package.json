@@ -17,11 +17,11 @@
   },
   "homepage": "https://aidenybai.com",
   "dependencies": {
-    "next": "^12.0.3",
+    "next": "^12.0.4",
     "nextra": "^1.1.0",
     "nextra-theme-blog": "^0.1.6",
     "prismjs": "^1.25.0",
-    "react": "^16.8.6",
+    "react": "^16.14.0",
     "react-dom": "^17.0.2",
     "use-game-of-life": "^1.0.0"
   }
