@@ -39,7 +39,7 @@ h1 {
 }
 
 .post-item-more {
-  display: none;
+  opacity: 0.5;
 }
 
 .post-item-title {
@@ -116,11 +116,17 @@ article.prose pre code {
   padding: 0;
 }
 
-.game {
-  display: grid;
-  grid-template-columns: repeat(50, 1fr);
-  grid-auto-rows: 13px;
+a.email {
+  float: right;
 }
-.game > .alive {
-  background: #e2e8f0;
+
+@media only screen and (min-width: 600px) {
+  .game {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-auto-rows: 13px;
+  }
+  .game > .alive {
+    background: #e2e8f0;
+  }
 }
