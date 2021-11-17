@@ -5,18 +5,18 @@ specifiers:
   nextra: ^1.1.0
   nextra-theme-blog: ^0.1.6
   prismjs: ^1.25.0
-  react: ^16.14.0
+  react: ^17.0.2
   react-dom: ^17.0.2
   use-game-of-life: ^1.0.0
 
 dependencies:
-  next: 12.0.4_react-dom@17.0.2+react@16.14.0
-  nextra: 1.1.0_react@16.14.0
-  nextra-theme-blog: 0.1.6_1b38fe10eb0de76a107f844a5b45c8b8
+  next: 12.0.4_react-dom@17.0.2+react@17.0.2
+  nextra: 1.1.0_react@17.0.2
+  nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
   prismjs: 1.25.0
-  react: 16.14.0
-  react-dom: 17.0.2_react@16.14.0
-  use-game-of-life: 1.0.0_react@16.14.0
+  react: 17.0.2
+  react-dom: 17.0.2_react@17.0.2
+  use-game-of-life: 1.0.0_react@17.0.2
 
 packages:
 
@@ -121,12 +121,12 @@ packages:
       - supports-color
     dev: false
 
-  /@mdx-js/react/1.6.22_react@16.14.0:
+  /@mdx-js/react/1.6.22_react@17.0.2:
     resolution: {integrity: sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==}
     peerDependencies:
       react: ^16.13.1 || ^17.0.0
     dependencies:
-      react: 16.14.0
+      react: 17.0.2
     dev: false
 
   /@napi-rs/triples/1.0.3:
@@ -141,7 +141,7 @@ packages:
     resolution: {integrity: sha512-mk9yCDNpfXINTJKFTZNgwYs7eqRFpc5D/49O/fKB59blihyKl1GY1sZ0l7a2bn5l1X/WuaZzcIfqnrwkneqeaQ==}
     dev: false
 
-  /@next/react-dev-overlay/12.0.4_react-dom@17.0.2+react@16.14.0:
+  /@next/react-dev-overlay/12.0.4_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-9O0lXyzv5goFSmDwq9Hp8JE+DcObvd+bTXvmGSSvYR91AlIoVlH8/PwATx8Rf5YEuqggn/XKR1hn2kBYcbcGnA==}
     peerDependencies:
       react: ^17.0.2
@@ -158,8 +158,8 @@ packages:
       css.escape: 1.5.1
       data-uri-to-buffer: 3.0.1
       platform: 1.3.6
-      react: 16.14.0
-      react-dom: 17.0.2_react@16.14.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       shell-quote: 1.7.3
       source-map: 0.8.0-beta.0
       stacktrace-parser: 0.1.10
@@ -2430,7 +2430,7 @@ packages:
     hasBin: true
     dev: false
 
-  /next/12.0.4_react-dom@17.0.2+react@16.14.0:
+  /next/12.0.4_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-1pvjcSZBm5OLoGmDhp4JwKwIE798WbqUNLuyU7w6a2jUkdWaxOYtkE/ROXQTi2pXHj7+6rm68AvhxROLX2NHQg==}
     engines: {node: '>=12.22.0'}
     hasBin: true
@@ -2453,7 +2453,7 @@ packages:
       '@napi-rs/triples': 1.0.3
       '@next/env': 12.0.4
       '@next/polyfill-module': 12.0.4
-      '@next/react-dev-overlay': 12.0.4_react-dom@17.0.2+react@16.14.0
+      '@next/react-dev-overlay': 12.0.4_react-dom@17.0.2+react@17.0.2
       '@next/react-refresh-utils': 12.0.4_react-refresh@0.8.3
       acorn: 8.5.0
       assert: 2.0.0
@@ -2484,18 +2484,18 @@ packages:
       process: 0.11.10
       querystring-es3: 0.2.1
       raw-body: 2.4.1
-      react: 16.14.0
-      react-dom: 17.0.2_react@16.14.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       react-is: 17.0.2
       react-refresh: 0.8.3
       regenerator-runtime: 0.13.4
       stream-browserify: 3.0.0
       stream-http: 3.1.1
       string_decoder: 1.3.0
-      styled-jsx: 5.0.0-beta.3_react@16.14.0
+      styled-jsx: 5.0.0-beta.3_react@17.0.2
       timers-browserify: 2.0.12
       tty-browserify: 0.0.1
-      use-subscription: 1.5.1_react@16.14.0
+      use-subscription: 1.5.1_react@17.0.2
       util: 0.12.4
       vm-browserify: 1.1.2
       watchpack: 2.1.1
@@ -2516,26 +2516,26 @@ packages:
       - webpack
     dev: false
 
-  /nextra-theme-blog/0.1.6_1b38fe10eb0de76a107f844a5b45c8b8:
+  /nextra-theme-blog/0.1.6_f195614718841b3c14a81ac95268ce58:
     resolution: {integrity: sha512-La8SCDHmJZQxI/9X4jDRcOgkiwAaHTmufaISzAymeJN8geXQELr9XJowpZYUNC6YEEJO2Wqux72PsuLu1BYNDg==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
-      '@mdx-js/react': 1.6.22_react@16.14.0
+      '@mdx-js/react': 1.6.22_react@17.0.2
       '@tailwindcss/typography': 0.2.0
       github-slugger: 1.4.0
-      next: 12.0.4_react-dom@17.0.2+react@16.14.0
-      prism-react-renderer: 1.2.1_react@16.14.0
-      react: 16.14.0
-      react-cusdis: 2.1.3_react-dom@17.0.2+react@16.14.0
-      react-dom: 17.0.2_react@16.14.0
+      next: 12.0.4_react-dom@17.0.2+react@17.0.2
+      prism-react-renderer: 1.2.1_react@17.0.2
+      react: 17.0.2
+      react-cusdis: 2.1.3_react-dom@17.0.2+react@17.0.2
+      react-dom: 17.0.2_react@17.0.2
     transitivePeerDependencies:
       - tailwindcss
     dev: false
 
-  /nextra/1.1.0_react@16.14.0:
+  /nextra/1.1.0_react@17.0.2:
     resolution: {integrity: sha512-WxD1c05gs4cyPHWvqOei9ofIQkLjtzQaDQo8+56f5ss7yJ6ZyI7Ohx7nyyjm6yTo1fO8gfj3v1l/AZmLnjh4FA==}
     peerDependencies:
       react: '>=16.13.1'
@@ -2545,7 +2545,7 @@ packages:
       graceful-fs: 4.2.8
       gray-matter: 4.0.3
       loader-utils: 2.0.2
-      react: 16.14.0
+      react: 17.0.2
       remark: 13.0.0
       remark-gfm: 1.0.0
       slash: 3.0.0
@@ -2806,12 +2806,12 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /prism-react-renderer/1.2.1_react@16.14.0:
+  /prism-react-renderer/1.2.1_react@17.0.2:
     resolution: {integrity: sha512-w23ch4f75V1Tnz8DajsYKvY5lF7H1+WvzvLUcF0paFxkTHSp42RS0H5CttdN2Q8RR3DRGZ9v5xD/h3n8C8kGmg==}
     peerDependencies:
       react: '>=0.14.9'
     dependencies:
-      react: 16.14.0
+      react: 17.0.2
     dev: false
 
   /prismjs/1.25.0:
@@ -2825,14 +2825,6 @@ packages:
   /process/0.11.10:
     resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=}
     engines: {node: '>= 0.6.0'}
-    dev: false
-
-  /prop-types/15.7.2:
-    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react-is: 16.13.1
     dev: false
 
   /property-information/6.1.1:
@@ -2905,29 +2897,25 @@ packages:
       unpipe: 1.0.0
     dev: false
 
-  /react-cusdis/2.1.3_react-dom@17.0.2+react@16.14.0:
+  /react-cusdis/2.1.3_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-fUJOAUY7a3y21fNzlRWUSTr/ZMsejQAYWIWdsNuBPPZHbUrBvke/8Gw4OL5Mlrth7jLw8VTNssX0WBX5/prorQ==}
     peerDependencies:
       react: ^17.0.0
       react-dom: ^17.0.0
     dependencies:
-      react: 16.14.0
-      react-dom: 17.0.2_react@16.14.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /react-dom/17.0.2_react@16.14.0:
+  /react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
       react: 17.0.2
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react: 16.14.0
+      react: 17.0.2
       scheduler: 0.20.2
-    dev: false
-
-  /react-is/16.13.1:
-    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-is/17.0.2:
@@ -2939,13 +2927,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react/16.14.0:
-    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+  /react/17.0.2:
+    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
     dev: false
 
   /readable-stream/2.3.7:
@@ -3300,7 +3287,7 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /styled-jsx/5.0.0-beta.3_react@16.14.0:
+  /styled-jsx/5.0.0-beta.3_react@17.0.2:
     resolution: {integrity: sha512-HtDDGSFPvmjHIqWf9n8Oo54tAoY/DTplvlyOH2+YOtD80Sp31Ap8ffSmxhgk5EkUoJ7xepdXMGT650mSffWuRA==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -3314,7 +3301,7 @@ packages:
       '@babel/types': 7.15.0
       convert-source-map: 1.7.0
       loader-utils: 1.2.3
-      react: 16.14.0
+      react: 17.0.2
       source-map: 0.7.3
       string-hash: 1.1.3
       stylis: 3.5.4
@@ -3579,23 +3566,23 @@ packages:
     engines: {node: '>= 4'}
     dev: false
 
-  /use-game-of-life/1.0.0_react@16.14.0:
+  /use-game-of-life/1.0.0_react@17.0.2:
     resolution: {integrity: sha512-fseXOOcegCvKyShUW2D9S36cPAEoCZxSBCFmRlpZOGiU7xeJZSBhrzzH80NmCNk2aJU8wQmH6TuoNgPv2kO96Q==}
     engines: {node: '>=8', npm: '>=5'}
     peerDependencies:
       react: ^16.8.6
     dependencies:
       immer: 5.3.6
-      react: 16.14.0
+      react: 17.0.2
     dev: false
 
-  /use-subscription/1.5.1_react@16.14.0:
+  /use-subscription/1.5.1_react@17.0.2:
     resolution: {integrity: sha512-Xv2a1P/yReAjAbhylMfFplFKj9GssgTwN7RlcTxBujFQcloStWNDQdc4g4NRWH9xS4i/FDk04vQBptAXoF3VcA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
     dependencies:
       object-assign: 4.1.1
-      react: 16.14.0
+      react: 17.0.2
     dev: false
 
   /util-deprecate/1.0.2:
