@@ -39,7 +39,7 @@ h1 {
 }
 
 .post-item-more {
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .post-item-title {
@@ -121,6 +121,11 @@ a.email {
 }
 
 .dino {
-  border: 1px solid #71809681;
+  border: 1px dashed #71809681;
   border-radius: 5px;
+}
+
+.runner-canvas {
+  margin-top: -30px !important;
+  margin-bottom: 20px !important;
 }
