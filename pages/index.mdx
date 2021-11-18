@@ -4,6 +4,7 @@ title: '~'
 ---
 
 import ChromeDinoGame from 'react-chrome-dino';
+import { StopKeypress } from '../components/StopKeypress.jsx';
 import { BrowserView } from 'react-device-detect';
 
 export const time = new Date().getYear() - new Date('Sunday, January 5, 2015').getYear();
@@ -21,4 +22,5 @@ Aiden started programming in elementary school and has since spent {time} years 
   <div className="dino">
     <ChromeDinoGame />
   </div>
+  <StopKeypress />
 </BrowserView>
