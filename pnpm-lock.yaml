@@ -9,6 +9,7 @@ specifiers:
   react-chrome-dino: ^0.1.3
   react-device-detect: ^2.1.2
   react-dom: ^17.0.2
+  react-tetris: ^0.2.0
 
 dependencies:
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
@@ -19,6 +20,7 @@ dependencies:
   react-chrome-dino: 0.1.3
   react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-tetris: 0.2.0_react-dom@17.0.2+react@17.0.2
 
 packages:
 
@@ -1776,6 +1778,10 @@ packages:
       minimist: 1.2.5
     dev: false
 
+  /keymaster/1.6.2:
+    resolution: {integrity: sha1-4a5U0OqUiPn2C2a2aPAumhlGxus=}
+    dev: false
+
   /keyv/3.0.0:
     resolution: {integrity: sha512-eguHnq22OE3uVoSYG0LVWNP+4ppamWr9+zWBe1bsNcovIMy6huUJFPgy4mGwCd/rnl3vOLGW1MTlu4c57CT1xA==}
     dependencies:
@@ -2831,6 +2837,14 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /property-information/6.1.1:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==}
     dev: false
@@ -2937,6 +2951,10 @@ packages:
       scheduler: 0.20.2
     dev: false
 
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: false
@@ -2944,6 +2962,18 @@ packages:
   /react-refresh/0.8.3:
     resolution: {integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /react-tetris/0.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-V0tweQvQW18uWqdM/ebb12obiYiy0oZRd6fFyUzRV6VoPsIiejEPxpUgpRv7hCybgd4dCHCrTJDLLCe6Yb+A5A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      keymaster: 1.6.2
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react/17.0.2:
