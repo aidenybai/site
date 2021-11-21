@@ -6,7 +6,6 @@ specifiers:
   nextra-theme-blog: ^0.1.6
   prismjs: ^1.25.0
   react: ^17.0.2
-  react-chrome-dino: ^0.1.3
   react-device-detect: ^2.1.2
   react-dom: ^17.0.2
   react-tetris: ^0.2.0
@@ -17,7 +16,6 @@ dependencies:
   nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
   prismjs: 1.25.0
   react: 17.0.2
-  react-chrome-dino: 0.1.3
   react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-tetris: 0.2.0_react-dom@17.0.2+react@17.0.2
@@ -2913,10 +2911,6 @@ packages:
       http-errors: 1.7.3
       iconv-lite: 0.4.24
       unpipe: 1.0.0
-    dev: false
-
-  /react-chrome-dino/0.1.3:
-    resolution: {integrity: sha512-MrQ+gixctthQbMiT1tc2aNIKEskxGnXVGq0CdpzSLdY8zLeDUacmKEzuU0B3em7LY4R+nFY3xlb4S+63G1F53A==}
     dev: false
 
   /react-cusdis/2.1.3_react-dom@17.0.2+react@17.0.2:
