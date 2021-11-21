@@ -39,7 +39,7 @@ h1 {
 }
 
 .post-item-more {
-  opacity: 0;
+  opacity: 1;
 }
 
 .post-item-title {
@@ -120,22 +120,37 @@ a.email {
   float: right;
 }
 
-.dino {
-  border: 1px dashed #71809681;
+table {
+  width: 100px !important;
+  border-bottom: 1px solid #71809681;
+  border-top: 1px solid #71809681;
   border-radius: 5px;
 }
 
-.runner-canvas {
-  margin-top: -30px !important;
-  margin-bottom: 20px !important;
+td {
+  width: 10px !important;
+}
+
+tr {
+  border: none !important;
+}
+
+.game-block {
+  width: 10px !important;
+}
+
+.piece-i,
+.piece-j,
+.piece-l,
+.piece-o,
+.piece-s,
+.piece-t,
+.piece-z {
+  background-color: #000;
 }
 
 @media only screen and (max-width: 600px) {
-  .dino {
+  .game-block {
     display: none;
   }
-}
-
-iframe {
-  border-radius: 10px;
 }

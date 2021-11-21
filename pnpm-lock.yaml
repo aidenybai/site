@@ -6,10 +6,9 @@ specifiers:
   nextra-theme-blog: ^0.1.6
   prismjs: ^1.25.0
   react: ^17.0.2
-  react-chrome-dino: ^0.1.3
   react-device-detect: ^2.1.2
   react-dom: ^17.0.2
-  use-game-of-life: ^1.0.0
+  react-tetris: ^0.2.0
 
 dependencies:
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
@@ -17,10 +16,9 @@ dependencies:
   nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
   prismjs: 1.25.0
   react: 17.0.2
-  react-chrome-dino: 0.1.3
   react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
-  use-game-of-life: 1.0.0_react@17.0.2
+  react-tetris: 0.2.0_react-dom@17.0.2+react@17.0.2
 
 packages:
 
@@ -114,9 +112,9 @@ packages:
       markdown-extensions: 1.1.1
       periscopic: 3.0.4
       remark-mdx: 2.0.0-rc.2
-      remark-parse: 10.0.0
+      remark-parse: 10.0.1
       remark-rehype: 10.0.1
-      unified: 10.1.0
+      unified: 10.1.1
       unist-util-position-from-estree: 1.1.1
       unist-util-stringify-position: 3.0.0
       unist-util-visit: 4.1.0
@@ -342,24 +340,30 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/16.11.7:
-    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
+  /@types/node/16.11.8:
+    resolution: {integrity: sha512-hmT5gfpRkkHr7DZZHMf3jBe/zNcVGN+jXSL2f8nAsYfBPxQFToKwQlS/zES4Sjp488Bi73i+p6bvrNRRGU0x9Q==}
     dev: false
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: false
 
-  /acorn-jsx/5.3.2_acorn@8.5.0:
+  /acorn-jsx/5.3.2_acorn@8.6.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.5.0
+      acorn: 8.6.0
     dev: false
 
   /acorn/8.5.0:
     resolution: {integrity: sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: false
+
+  /acorn/8.6.0:
+    resolution: {integrity: sha512-U1riIR+lBSNi3IbxtaHOIKdH8sLFv3NYfNv8sg7ZsNhcfl4HF2++BfqqrNAxoCLQW1iiylOj76ecnaUxz+z9yw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: false
@@ -543,9 +547,9 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001281
+      caniuse-lite: 1.0.30001282
       colorette: 1.4.0
-      electron-to-chromium: 1.3.900
+      electron-to-chromium: 1.3.902
       escalade: 3.1.1
       node-releases: 1.1.77
     dev: false
@@ -615,8 +619,8 @@ packages:
       get-intrinsic: 1.1.1
     dev: false
 
-  /caniuse-lite/1.0.30001281:
-    resolution: {integrity: sha512-1ktfDV2+4LYxOGeAZygMyvhiPBJKV1gsqPmfGGwRbwYOzDWbsQHgBFo+2lpRTMO2gWjPWJrCMLWa2fnSVnxn0A==}
+  /caniuse-lite/1.0.30001282:
+    resolution: {integrity: sha512-YhF/hG6nqBEllymSIjLtR2iWDDnChvhnVJqp+vloyt2tEHFG1yBR+ac2B/rOw0qOK0m0lEXU2dv4E/sMk5P9Kg==}
     dev: false
 
   /ccount/1.1.0:
@@ -811,7 +815,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      caniuse-lite: 1.0.30001281
+      caniuse-lite: 1.0.30001282
       postcss: 8.2.15
     dev: false
 
@@ -978,8 +982,8 @@ packages:
     resolution: {integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=}
     dev: false
 
-  /electron-to-chromium/1.3.900:
-    resolution: {integrity: sha512-SuXbQD8D4EjsaBaJJxySHbC+zq8JrFfxtb4GIr4E9n1BcROyMcRrJCYQNpJ9N+Wjf5mFp7Wp0OHykd14JNEzzQ==}
+  /electron-to-chromium/1.3.902:
+    resolution: {integrity: sha512-zFv5jbtyIr+V9FuT9o439isXbkXQ27mJqZfLXpBKzXugWE8+3RotHbXJlli0/r+Rvdlkut0OOMzeOWLAjH0jCw==}
     dev: false
 
   /elliptic/6.5.4:
@@ -1480,10 +1484,6 @@ packages:
       queue: 6.0.2
     dev: false
 
-  /immer/5.3.6:
-    resolution: {integrity: sha512-pqWQ6ozVfNOUDjrLfm4Pt7q4Q12cGw2HUZgry4Q5+Myxu9nmHRkWBpI0J4+MK0AxbdFtdMTwEGVl7Vd+vEiK+A==}
-    dev: false
-
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
     dev: false
@@ -1740,7 +1740,7 @@ packages:
     resolution: {integrity: sha512-mk0umAQ5lT+CaOJ+Qp01N6kz48sJG2kr2n1rX0koqKf6FIygQV0qLOdN9SCYID4IVeSigDOcPeGLozdMLYfb5g==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@types/node': 16.11.7
+      '@types/node': 16.11.8
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -1774,6 +1774,10 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.5
+    dev: false
+
+  /keymaster/1.6.2:
+    resolution: {integrity: sha1-4a5U0OqUiPn2C2a2aPAumhlGxus=}
     dev: false
 
   /keyv/3.0.0:
@@ -2187,8 +2191,8 @@ packages:
   /micromark-extension-mdxjs/1.0.0:
     resolution: {integrity: sha512-TZZRZgeHvtgm+IhtgC2+uDMR7h8eTKF0QUX9YsgoL9+bADBpBY6SiLvWqnBlLbCEevITmTqmEuY3FoxMKVs1rQ==}
     dependencies:
-      acorn: 8.5.0
-      acorn-jsx: 5.3.2_acorn@8.5.0
+      acorn: 8.6.0
+      acorn-jsx: 5.3.2_acorn@8.6.0
       micromark-extension-mdx-expression: 1.0.2
       micromark-extension-mdx-jsx: 1.0.2
       micromark-extension-mdx-md: 1.0.0
@@ -2464,7 +2468,7 @@ packages:
       browserify-zlib: 0.2.0
       browserslist: 4.16.6
       buffer: 5.6.0
-      caniuse-lite: 1.0.30001281
+      caniuse-lite: 1.0.30001282
       chalk: 2.4.2
       chokidar: 3.5.1
       constants-browserify: 1.0.0
@@ -2831,6 +2835,14 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /property-information/6.1.1:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==}
     dev: false
@@ -2901,10 +2913,6 @@ packages:
       unpipe: 1.0.0
     dev: false
 
-  /react-chrome-dino/0.1.3:
-    resolution: {integrity: sha512-MrQ+gixctthQbMiT1tc2aNIKEskxGnXVGq0CdpzSLdY8zLeDUacmKEzuU0B3em7LY4R+nFY3xlb4S+63G1F53A==}
-    dev: false
-
   /react-cusdis/2.1.3_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-fUJOAUY7a3y21fNzlRWUSTr/ZMsejQAYWIWdsNuBPPZHbUrBvke/8Gw4OL5Mlrth7jLw8VTNssX0WBX5/prorQ==}
     peerDependencies:
@@ -2937,6 +2945,10 @@ packages:
       scheduler: 0.20.2
     dev: false
 
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: false
@@ -2944,6 +2956,18 @@ packages:
   /react-refresh/0.8.3:
     resolution: {integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /react-tetris/0.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-V0tweQvQW18uWqdM/ebb12obiYiy0oZRd6fFyUzRV6VoPsIiejEPxpUgpRv7hCybgd4dCHCrTJDLLCe6Yb+A5A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      keymaster: 1.6.2
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react/17.0.2:
@@ -3004,12 +3028,12 @@ packages:
       - supports-color
     dev: false
 
-  /remark-parse/10.0.0:
-    resolution: {integrity: sha512-07ei47p2Xl7Bqbn9H2VYQYirnAFJPwdMuypdozWsSbnmrkgA2e2sZLZdnDNrrsxR4onmIzH/J6KXqKxCuqHtPQ==}
+  /remark-parse/10.0.1:
+    resolution: {integrity: sha512-1fUyHr2jLsVOkhbvPRBJ5zTKZZyD6yZzYaWCS6BPBdQ8vEMBCH+9zNCDA6tET/zHCi/jLqjCWtlJZUPk+DbnFw==}
     dependencies:
       '@types/mdast': 3.0.10
       mdast-util-from-markdown: 1.1.0
-      unified: 10.1.0
+      unified: 10.1.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3028,7 +3052,7 @@ packages:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
       mdast-util-to-hast: 12.0.0
-      unified: 10.1.0
+      unified: 10.1.1
     dev: false
 
   /remark-stringify/9.0.1:
@@ -3465,8 +3489,8 @@ packages:
       through: 2.3.8
     dev: false
 
-  /unified/10.1.0:
-    resolution: {integrity: sha512-4U3ru/BRXYYhKbwXV6lU6bufLikoAavTwev89H5UxY8enDFaAT2VXmIXYNm6hb5oHPng/EXr77PVyDFcptbk5g==}
+  /unified/10.1.1:
+    resolution: {integrity: sha512-v4ky1+6BN9X3pQrOdkFIPWAaeDsHPE1svRDxq7YpTc2plkIqFMwukfqM+l0ewpP9EfwARlt9pPFAeWYhHm8X9w==}
     dependencies:
       '@types/unist': 2.0.6
       bail: 2.0.2
@@ -3587,16 +3611,6 @@ packages:
   /url-to-options/1.0.1:
     resolution: {integrity: sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=}
     engines: {node: '>= 4'}
-    dev: false
-
-  /use-game-of-life/1.0.0_react@17.0.2:
-    resolution: {integrity: sha512-fseXOOcegCvKyShUW2D9S36cPAEoCZxSBCFmRlpZOGiU7xeJZSBhrzzH80NmCNk2aJU8wQmH6TuoNgPv2kO96Q==}
-    engines: {node: '>=8', npm: '>=5'}
-    peerDependencies:
-      react: ^16.8.6
-    dependencies:
-      immer: 5.3.6
-      react: 17.0.2
     dev: false
 
   /use-subscription/1.5.1_react@17.0.2:

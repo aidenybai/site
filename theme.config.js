@@ -22,4 +22,7 @@ export default {
       <link rel="icon" type="image/png" href="/favicon.png" />
     </>
   ),
+  readMore: '→',
+  titleSuffix: null,
+  postFooter: null,
 };
