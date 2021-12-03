@@ -11,14 +11,14 @@ export default () => {
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: size * 2,
-      height: size * 2,
+      width: size * 2.1,
+      height: size * 2.1,
       phi: 0,
       theta: 0.6,
       dark: 0,
       diffuse: 1.2,
-      mapSamples: 4000,
-      mapBrightness: 10,
+      mapSamples: 8000,
+      mapBrightness: 100,
       baseColor: [1, 1, 1],
       markerColor: [246 / 255, 109 / 255, 87 / 255],
       glowColor: [113 / 255, 128 / 255, 150 / 255],
