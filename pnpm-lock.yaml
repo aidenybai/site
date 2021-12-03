@@ -1,22 +1,24 @@
 lockfileVersion: 5.3
 
 specifiers:
-  handsfree: ^8.5.1
+  cobe: ^0.3.3
   next: ^12.0.4
   nextra: ^1.1.0
   nextra-theme-blog: ^0.1.6
   prismjs: ^1.25.0
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-draggable: ^4.4.4
 
 dependencies:
-  handsfree: 8.5.1
+  cobe: 0.3.3
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
   nextra: 1.1.0_react@17.0.2
   nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
   prismjs: 1.25.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-draggable: 4.4.4_react-dom@17.0.2+react@17.0.2
 
 packages:
 
@@ -702,6 +704,17 @@ packages:
       mimic-response: 1.0.1
     dev: false
 
+  /clsx/1.1.1:
+    resolution: {integrity: sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /cobe/0.3.3:
+    resolution: {integrity: sha512-okgBuYZCKaAfo9IOwh3y1lg7asXawsHDb5fh3EjRJ8M27O/Rn3CIRXXdMb/mgI6uC1r9ortfEkWbSZSQMJE07Q==}
+    dependencies:
+      phenomenon: 1.6.0
+    dev: false
+
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -1219,10 +1232,6 @@ packages:
       path-exists: 4.0.0
     dev: false
 
-  /fingerpose/0.0.2:
-    resolution: {integrity: sha512-KNFly+Qc8B8fumdzoP6PhEY/UHodzjXmyo5+0ZsbNs0F+X2Mn4iiErcofnGONwwtcDuL2pvCC8bCwI9u1qPLDw==}
-    dev: false
-
   /foreach/2.0.5:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
     dev: false
@@ -1342,18 +1351,6 @@ packages:
       kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
-    dev: false
-
-  /gsap/2.1.3:
-    resolution: {integrity: sha512-8RFASCqi2FOCBuv7X4o7M6bLdy+1hbR0azg+MG7zz+EVsI+OmJblYsTk0GEepQd2Jg/ItMPiVTibF7r3EVxjZQ==}
-    dev: false
-
-  /handsfree/8.5.1:
-    resolution: {integrity: sha512-Sz8anlBAXDMMG92HgmUGqwU/Yzj7iw0dobdLJ+m4+PW2LSLjl4ylrZDgprzxZORfwXN1qv4RkUNpAg/hSrzGAw==}
-    dependencies:
-      fingerpose: 0.0.2
-      gsap: 2.1.3
-      lodash: 4.17.21
     dev: false
 
   /has-bigints/1.0.1:
@@ -1833,10 +1830,6 @@ packages:
 
   /lodash.sortby/4.7.0:
     resolution: {integrity: sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=}
-    dev: false
-
-  /lodash/4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
 
   /longest-streak/2.0.4:
@@ -2771,6 +2764,10 @@ packages:
       is-reference: 3.0.0
     dev: false
 
+  /phenomenon/1.6.0:
+    resolution: {integrity: sha512-7h9/fjPD3qNlgggzm88cY58l9sudZ6Ey+UmZsizfhtawO6E3srZQXywaNm2lBwT72TbpHYRPy7ytIHeBUD/G0A==}
+    dev: false
+
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
     engines: {node: '>=8.6'}
@@ -2847,6 +2844,14 @@ packages:
   /process/0.11.10:
     resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=}
     engines: {node: '>= 0.6.0'}
+    dev: false
+
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
     dev: false
 
   /property-information/6.1.1:
@@ -2938,6 +2943,22 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: false
+
+  /react-draggable/4.4.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-6e0WdcNLwpBx/YIDpoyd2Xb04PB0elrDrulKUgdrIlwuYvxh5Ok9M+F8cljm8kPXXs43PmMzek9RrB1b7mLMqA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+      react-dom: '>= 16.3.0'
+    dependencies:
+      clsx: 1.1.1
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-is/17.0.2:

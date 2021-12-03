@@ -135,23 +135,3 @@ td {
 tr {
   border: none !important;
 }
-
-.game-block {
-  width: 10px !important;
-}
-
-.piece-i,
-.piece-j,
-.piece-l,
-.piece-o,
-.piece-s,
-.piece-t,
-.piece-z {
-  background-color: #000;
-}
-
-@media only screen and (max-width: 600px) {
-  .game-block {
-    display: none;
-  }
-}
