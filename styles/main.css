@@ -118,6 +118,7 @@ article.prose pre code {
 
 a.email {
   float: right;
+  text-decoration: none;
 }
 
 table {

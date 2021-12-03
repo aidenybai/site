@@ -11,7 +11,7 @@ export default {
       </abbr>{' '}
       <time>{year}</time> © Aiden Bai.
       <a className="email" href="mailto:aiden.bai05@gmail.com">
-        @
+        ඞ
       </a>
     </small>
   ),
