@@ -35,8 +35,8 @@ export default () => {
     };
   }, []);
 
-  const canvas = document.createElement('canvas');
-  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  const gl =
+    canvasRef.current.getContext('webgl') || canvasRef.current.getContext('experimental-webgl');
   if (gl && gl instanceof WebGLRenderingContext) {
     return <canvas ref={canvasRef} style={{ width: size, height: size, left: 0 }} />;
   } else {
