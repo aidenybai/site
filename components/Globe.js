@@ -1,7 +1,7 @@
 import createGlobe from 'cobe';
 import { useEffect, useRef } from 'react';
 
-let size = 0;
+let size = 100;
 
 export default () => {
   const canvasRef = useRef();
@@ -11,10 +11,6 @@ export default () => {
     const canvas = document.createElement('canvas');
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
     if (gl && gl instanceof WebGLRenderingContext && !/Mobile/i.test(navigator.userAgent)) {
-      size = 100;
-      canvasRef.current.style.width = `${size}px`;
-      canvasRef.current.style.height = `${size}px`;
-
       const globe = createGlobe(canvasRef.current, {
         devicePixelRatio: 2,
         width: size * 2.1,
@@ -39,8 +35,11 @@ export default () => {
       return () => {
         globe.destroy();
       };
+    } else {
+      canvasRef.current.style.width = `0px`;
+      canvasRef.current.style.height = `0px`;
     }
   }, []);
 
-  return <canvas ref={canvasRef} style={{ width: size, height: size, left: 0 }} />;
+  return <canvas ref={canvasRef} style={{ width: size, height: size }} />;
 };
