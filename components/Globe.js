@@ -5,16 +5,15 @@ let size = 0;
 
 export default () => {
   const canvasRef = useRef();
+  let i = 0;
 
   useEffect(() => {
     const canvas = document.createElement('canvas');
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-    if (gl && gl instanceof WebGLRenderingContext) {
+    if (gl && gl instanceof WebGLRenderingContext && /Mobile/i.test(navigator.userAgent)) {
       size = 100;
-      let i = 0;
       canvasRef.current.style.width = `${size}px`;
       canvasRef.current.style.height = `${size}px`;
-      console.log(canvasRef.current);
 
       const globe = createGlobe(canvasRef.current, {
         devicePixelRatio: 2,
@@ -23,8 +22,8 @@ export default () => {
         phi: 0,
         theta: 0.6,
         dark: 0,
-        diffuse: 1.2,
-        mapSamples: 8000,
+        diffuse: 1.5,
+        mapSamples: 16000,
         mapBrightness: 100,
         baseColor: [1, 1, 1],
         markerColor: [246 / 255, 109 / 255, 87 / 255],
@@ -33,7 +32,7 @@ export default () => {
         onRender: (state) => {
           state.phi = Math.tan(i);
           state.dark = 0.75 * Math.sin(0.75 * i);
-          i += 0.01;
+          i += 0.001;
         },
       });
 

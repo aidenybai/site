@@ -141,3 +141,16 @@ tr {
     display: none;
   }
 }
+
+canvas {
+  transform: scale(1.1);
+  transition: transform 100ms;
+}
+
+canvas:hover {
+  transform: scale(1.5);
+}
+
+canvas:active {
+  transform: scale(2);
+}
