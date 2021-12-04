@@ -10,7 +10,7 @@ export default () => {
   useEffect(() => {
     const canvas = document.createElement('canvas');
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-    if (gl && gl instanceof WebGLRenderingContext && /Mobile/i.test(navigator.userAgent)) {
+    if (gl && gl instanceof WebGLRenderingContext && !/Mobile/i.test(navigator.userAgent)) {
       size = 100;
       canvasRef.current.style.width = `${size}px`;
       canvasRef.current.style.height = `${size}px`;
