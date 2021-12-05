@@ -30,6 +30,8 @@ export default () => {
           state.phi = i;
           if (mouse === 0) i += inc;
           if (mouse === 1) i += inc / 10;
+          if (inc > 0.01) inc /= 1.01;
+          else inc = 0.01;
         },
       });
 
