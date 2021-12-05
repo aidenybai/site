@@ -8,9 +8,9 @@ export default {
         title="This site and all its content are licensed under a MIT License."
         style={{ cursor: 'help' }}
       >
-        MIT
+        made w/ ♥
       </abbr>{' '}
-      <time>{year}</time> © Aiden Bai.
+      by Aiden Bai.
       <a className="email" href="mailto:aiden.bai05@gmail.com">
         ඞ
       </a>
