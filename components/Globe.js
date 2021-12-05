@@ -47,6 +47,7 @@ export default () => {
   return (
     <canvas
       ref={canvasRef}
+      title="Click me to spin the globe faster!"
       onMouseOut={() => (mouse = 0)}
       onMouseOver={() => (mouse = 1)}
       onMouseUp={() => (mouse = 1)}
