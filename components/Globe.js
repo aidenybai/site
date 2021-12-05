@@ -30,7 +30,7 @@ export default function Globe() {
           if (i > 6.28 * 10) i = 0;
           state.phi = i;
           if (mouse === 0) i += inc;
-          if (mouse === 1) i += inc / 10;
+          if (mouse === 1) i += inc / 2;
           if (inc > 0.01) inc /= 1.01;
           else inc = 0.01;
         },
@@ -51,8 +51,6 @@ export default function Globe() {
       title="Click me to spin the globe faster!"
       onMouseOut={() => (mouse = 0)}
       onMouseOver={() => (mouse = 1)}
-      onMouseUp={() => (mouse = 1)}
-      onMouseDown={() => (mouse = 2)}
       onClick={() => (inc *= 2)}
       style={{ width: size, height: size }}
     />
