@@ -1,7 +1,7 @@
 import createGlobe from 'cobe';
 import { useEffect, useRef } from 'react';
 
-export default () => {
+export default function Globe() {
   const canvasRef = useRef();
   let size = 100;
   let mouse = 0;
@@ -56,4 +56,4 @@ export default () => {
       style={{ width: size, height: size }}
     />
   );
-};
+}

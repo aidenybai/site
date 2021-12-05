@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@giscus/react': ^1.0.1
   cobe: ^0.3.3
+  dayjs: ^1.10.7
   next: ^12.0.4
   nextra: ^2.0.0-beta.5
   nextra-theme-blog: ^0.1.6
@@ -13,6 +14,7 @@ specifiers:
 dependencies:
   '@giscus/react': 1.0.1_9bdd65c2b60ce8638444b80b396a481b
   cobe: 0.3.3
+  dayjs: 1.10.7
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
   nextra: 2.0.0-beta.5_react@17.0.2
   nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
@@ -849,6 +851,10 @@ packages:
   /data-uri-to-buffer/3.0.1:
     resolution: {integrity: sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==}
     engines: {node: '>= 6'}
+    dev: false
+
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
     dev: false
 
   /debug/2.6.9:
