@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/21f4e1b1-34eb-44a9-998e-d494b4e77580/deploy-status)](https://app.netlify.com/sites/aidenybai-site/deploys)
+![Vercel Status](https://img.shields.io/github/deployments/aidenybai/site/production?label=vercel&logo=vercel&logoColor=white&style=flat-square)
 
 # aidenybai.com
 
