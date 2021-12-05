@@ -28,7 +28,7 @@ export default () => {
         onRender: (state) => {
           state.phi = Math.tan(i);
           state.dark = 0.75 * Math.sin(0.75 * i);
-          i += 0.001;
+          i += 0.01;
         },
       });
 
