@@ -1,4 +1,5 @@
 const year = new Date().getFullYear();
+const age = new Date().getYear() - new Date('Sunday, January 5, 2005').getYear();
 
 export default {
   footer: (
@@ -19,6 +20,10 @@ export default {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="og:title" content="Aiden Bai" />
+      <meta
+        name="og:description"
+        content={`${age} y/o student from Washington State interested in research and open source.`}
+      />
       <link rel="icon" type="image/png" href="/favicon.png" />
     </>
   ),
