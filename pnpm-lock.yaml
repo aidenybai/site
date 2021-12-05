@@ -5,7 +5,7 @@ specifiers:
   cobe: ^0.3.3
   next: ^12.0.4
   nextra: ^2.0.0-beta.5
-  nextra-theme-blog: ^2.0.0-beta.5
+  nextra-theme-blog: ^0.1.6
   prop-types: ^15.7.2
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -15,7 +15,7 @@ dependencies:
   cobe: 0.3.3
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
   nextra: 2.0.0-beta.5_react@17.0.2
-  nextra-theme-blog: 2.0.0-beta.5_f195614718841b3c14a81ac95268ce58
+  nextra-theme-blog: 0.1.6_f195614718841b3c14a81ac95268ce58
   prop-types: 15.7.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -136,13 +136,11 @@ packages:
       - supports-color
     dev: false
 
-  /@mdx-js/react/2.0.0-rc.2_react@17.0.2:
-    resolution: {integrity: sha512-WHksgPnvKyDDNq0RQvTnKboe+wxUcq5A7xD12Ob+ASfUR3NRFo/h//k8fjv3t8dgzWX5M0UeU5jsccjykosDEQ==}
+  /@mdx-js/react/1.6.22_react@17.0.2:
+    resolution: {integrity: sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==}
     peerDependencies:
-      react: '>=16'
+      react: ^16.13.1 || ^17.0.0
     dependencies:
-      '@types/mdx': 2.0.1
-      '@types/react': 17.0.37
       react: 17.0.2
     dev: false
 
@@ -299,15 +297,10 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /@tailwindcss/typography/0.4.1:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+  /@tailwindcss/typography/0.2.0:
+    resolution: {integrity: sha512-aPgMH+CjQiScLZculoDNOQUrrK2ktkbl3D6uCLYp1jgYRlNDrMONu9nMu8LfwAeetYNpVNeIGx7WzHSu0kvECg==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
-    dependencies:
-      lodash.castarray: 4.4.0
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
+      tailwindcss: ^1.5.0
     dev: false
 
   /@types/acorn/4.0.6:
@@ -362,22 +355,6 @@ packages:
 
   /@types/node/16.11.11:
     resolution: {integrity: sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==}
-    dev: false
-
-  /@types/prop-types/15.7.4:
-    resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
-    dev: false
-
-  /@types/react/17.0.37:
-    resolution: {integrity: sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==}
-    dependencies:
-      '@types/prop-types': 15.7.4
-      '@types/scheduler': 0.16.2
-      csstype: 3.0.10
-    dev: false
-
-  /@types/scheduler/0.16.2:
-    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: false
 
   /@types/unist/2.0.6:
@@ -867,10 +844,6 @@ packages:
     dependencies:
       cssnano-preset-simple: 3.0.0_postcss@8.2.15
       postcss: 8.2.15
-    dev: false
-
-  /csstype/3.0.10:
-    resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==}
     dev: false
 
   /data-uri-to-buffer/3.0.1:
@@ -1888,24 +1861,8 @@ packages:
       p-locate: 4.1.0
     dev: false
 
-  /lodash.castarray/4.4.0:
-    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
-    dev: false
-
-  /lodash.isplainobject/4.0.6:
-    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
-    dev: false
-
-  /lodash.merge/4.6.2:
-    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-    dev: false
-
   /lodash.sortby/4.7.0:
     resolution: {integrity: sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=}
-    dev: false
-
-  /lodash.uniq/4.5.0:
-    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
     dev: false
 
   /longest-streak/2.0.4:
@@ -2509,18 +2466,6 @@ packages:
     hasBin: true
     dev: false
 
-  /next-themes/0.0.15_f195614718841b3c14a81ac95268ce58:
-    resolution: {integrity: sha512-LTmtqYi03c4gMTJmWwVK9XkHL7h0/+XrtR970Ujvtu3s0kZNeJN24aJsi4rkZOI8i19+qq6f8j+8Duwy5jqcrQ==}
-    peerDependencies:
-      next: '*'
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      next: 12.0.4_react-dom@17.0.2+react@17.0.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-    dev: false
-
   /next/12.0.4_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-1pvjcSZBm5OLoGmDhp4JwKwIE798WbqUNLuyU7w6a2jUkdWaxOYtkE/ROXQTi2pXHj7+6rm68AvhxROLX2NHQg==}
     engines: {node: '>=12.22.0'}
@@ -2607,18 +2552,17 @@ packages:
       - webpack
     dev: false
 
-  /nextra-theme-blog/2.0.0-beta.5_f195614718841b3c14a81ac95268ce58:
-    resolution: {integrity: sha512-cF3tmaKNxFAXrGQO5725QvUrQPSvnwQzvm7Wl4U5EhLZ9ZBilxk4jS2SOKz1vXR/6mCykJsEcZONEHGupytkeQ==}
+  /nextra-theme-blog/0.1.6_f195614718841b3c14a81ac95268ce58:
+    resolution: {integrity: sha512-La8SCDHmJZQxI/9X4jDRcOgkiwAaHTmufaISzAymeJN8geXQELr9XJowpZYUNC6YEEJO2Wqux72PsuLu1BYNDg==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
-      '@mdx-js/react': 2.0.0-rc.2_react@17.0.2
-      '@tailwindcss/typography': 0.4.1
+      '@mdx-js/react': 1.6.22_react@17.0.2
+      '@tailwindcss/typography': 0.2.0
       github-slugger: 1.4.0
       next: 12.0.4_react-dom@17.0.2+react@17.0.2
-      next-themes: 0.0.15_f195614718841b3c14a81ac95268ce58
       prism-react-renderer: 1.2.1_react@17.0.2
       react: 17.0.2
       react-cusdis: 2.1.3_react-dom@17.0.2+react@17.0.2
