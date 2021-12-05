@@ -1,13 +1,14 @@
 import createGlobe from 'cobe';
 import { useEffect, useRef } from 'react';
 
-let size = 100;
-
 export default () => {
   const canvasRef = useRef();
-  let i = 0;
+  let size = 100;
+  let mouse = 0;
+  let inc = 0.01;
 
   useEffect(() => {
+    let i = 0;
     const canvas = document.createElement('canvas');
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
     if (gl && gl instanceof WebGLRenderingContext && !/Mobile/i.test(navigator.userAgent)) {
@@ -18,17 +19,17 @@ export default () => {
         phi: 0,
         theta: 0.6,
         dark: 0,
-        diffuse: 1.5,
+        diffuse: 3,
         mapSamples: 16000,
-        mapBrightness: 100,
+        mapBrightness: 5,
         baseColor: [1, 1, 1],
         markerColor: [246 / 255, 109 / 255, 87 / 255],
         glowColor: [113 / 255, 128 / 255, 150 / 255],
         markers: [{ location: [45.5857, -122.4027], size: 0.1 }],
         onRender: (state) => {
-          state.phi = Math.tan(i);
-          state.dark = 0.75 * Math.sin(0.75 * i);
-          i += 0.01;
+          state.phi = i;
+          if (mouse === 0) i += inc;
+          if (mouse === 1) i += inc / 10;
         },
       });
 
@@ -41,5 +42,15 @@ export default () => {
     }
   }, []);
 
-  return <canvas ref={canvasRef} style={{ width: size, height: size }} />;
+  return (
+    <canvas
+      ref={canvasRef}
+      onMouseOut={() => (mouse = 0)}
+      onMouseOver={() => (mouse = 1)}
+      onMouseUp={() => (mouse = 1)}
+      onMouseDown={() => (mouse = 2)}
+      onClick={() => (inc *= 2)}
+      style={{ width: size, height: size }}
+    />
+  );
 };
