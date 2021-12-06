@@ -23,8 +23,8 @@ export default function Globe() {
         mapSamples: 16000,
         mapBrightness: 5,
         baseColor: [1, 1, 1],
-        markerColor: [246 / 255, 109 / 255, 87 / 255],
-        glowColor: [113 / 255, 128 / 255, 150 / 255],
+        markerColor: [123, 117, 212].map((value) => value / 255),
+        glowColor: [113, 128, 150].map((value) => value / 255),
         markers: [{ location: [45.5857, -122.4027], size: 0.1 }],
         onRender: (state) => {
           if (i > 6.28 * 10) i = 0;
