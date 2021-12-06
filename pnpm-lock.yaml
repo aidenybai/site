@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@giscus/react': ^1.0.1
   cobe: ^0.3.3
   dayjs: ^1.10.7
   next: ^12.0.4
@@ -10,9 +9,9 @@ specifiers:
   prop-types: ^15.7.2
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-lite-youtube-embed: ^2.1.0
 
 dependencies:
-  '@giscus/react': 1.0.1_9bdd65c2b60ce8638444b80b396a481b
   cobe: 0.3.3
   dayjs: 1.10.7
   next: 12.0.4_react-dom@17.0.2+react@17.0.2
@@ -21,6 +20,7 @@ dependencies:
   prop-types: 15.7.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-lite-youtube-embed: 2.1.0_react-dom@17.0.2+react@17.0.2
 
 packages:
 
@@ -71,19 +71,6 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.15.7
       to-fast-properties: 2.0.0
-    dev: false
-
-  /@giscus/react/1.0.1_9bdd65c2b60ce8638444b80b396a481b:
-    resolution: {integrity: sha512-vViRGjfmDy9xvRIx+6+hocL3iAipbKx4gxtSpQBzOksDwnZS0QbB+r19bYQ08vw8CfHRwE6ws8AOO9yEUrzUyQ==}
-    peerDependencies:
-      prop-types: ^15.7.2
-      react: ^16 || ^17 || ^18
-      react-dom: ^16 || ^17 || ^18
-    dependencies:
-      iframe-resizer-react: 1.1.0_9bdd65c2b60ce8638444b80b396a481b
-      prop-types: 15.7.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /@hapi/accept/5.0.2:
@@ -1509,26 +1496,6 @@ packages:
 
   /ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
-    dev: false
-
-  /iframe-resizer-react/1.1.0_9bdd65c2b60ce8638444b80b396a481b:
-    resolution: {integrity: sha512-FrytSq91AIJaDgE+6uK/Vdd6IR8CrwLoZ6eGmL2qQMPTzF0xlSV2jaSzRRUh5V2fttD7vzl21jvBl97bV40eBw==}
-    engines: {node: '>=8', npm: '>=5'}
-    peerDependencies:
-      prop-types: '>=15.7.2'
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      iframe-resizer: 4.3.2
-      prop-types: 15.7.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      warning: 4.0.3
-    dev: false
-
-  /iframe-resizer/4.3.2:
-    resolution: {integrity: sha512-gOWo2hmdPjMQsQ+zTKbses08mDfDEMh4NneGQNP4qwePYujY1lguqP6gnbeJkf154gojWlBhIltlgnMfYjGHWA==}
-    engines: {node: '>=0.8.0'}
     dev: false
 
   /image-size/1.0.0:
@@ -2977,6 +2944,16 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: false
 
+  /react-lite-youtube-embed/2.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-tK91bU+tkFtVVJQf7tQlvVTCdjtVFnx4A6R+y8x2AjUip6cHjcKsdr3yvD97uK0GzyWQ7dP7ROY2IU6BJNX88Q==}
+    peerDependencies:
+      react: '>=16.0.8'
+      react-dom: '>=16.0.8'
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
   /react-refresh/0.8.3:
     resolution: {integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==}
     engines: {node: '>=0.10.0'}
@@ -3645,12 +3622,6 @@ packages:
 
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
-    dev: false
-
-  /warning/4.0.3:
-    resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
-    dependencies:
-      loose-envify: 1.4.0
     dev: false
 
   /watchpack/2.1.1:
