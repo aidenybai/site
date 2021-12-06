@@ -27,7 +27,6 @@ export default function Globe() {
         glowColor: [113, 128, 150].map((value) => value / 255),
         markers: [{ location: [45.5857, -122.4027], size: 0.1 }],
         onRender: (state) => {
-          if (i > 6.28 * 10) i = 0;
           state.phi = i;
           if (mouse === 0) i += inc;
           if (mouse === 1) i += inc / 2;
