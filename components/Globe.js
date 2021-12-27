@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 export default function Globe() {
   const canvasRef = useRef();
-  let size = 100;
+  let size = 69;
   let mouse = 0;
   let inc = 0.01;
 
@@ -51,7 +51,7 @@ export default function Globe() {
       onMouseOut={() => (mouse = 0)}
       onMouseOver={() => (mouse = 1)}
       onClick={() => (inc *= 2)}
-      style={{ width: size, height: size }}
+      style={{ width: size, height: size, marginBottom: 15 }}
     />
   );
 }
