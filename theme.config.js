@@ -1,4 +1,3 @@
-const year = new Date().getFullYear();
 const age = new Date().getYear() - new Date('Sunday, January 5, 2005').getYear();
 
 export default {

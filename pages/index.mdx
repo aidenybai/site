@@ -3,8 +3,13 @@ type: page
 title: '~'
 ---
 
+import Head from 'next/head';
 import Globe from '../components/Globe';
 import Link from 'next/link';
+
+<Head>
+  <title>Aiden Bai</title>
+</Head>
 
 export const age = new Date().getYear() - new Date('Sunday, January 5, 2005').getYear();
 
