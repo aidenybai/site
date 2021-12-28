@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  cobe: ^0.4.0
+  cobe: ^0.4.1
   dayjs: ^1.10.7
   next: ^12.0.4
   nextra: ^2.0.0-beta.5
@@ -12,7 +12,7 @@ specifiers:
   react-lite-youtube-embed: ^2.1.3
 
 dependencies:
-  cobe: 0.4.0
+  cobe: 0.4.1
   dayjs: 1.10.7
   next: 12.0.7_react-dom@17.0.2+react@17.0.2
   nextra: 2.0.0-beta.5_react@17.0.2
@@ -702,8 +702,8 @@ packages:
       mimic-response: 1.0.1
     dev: false
 
-  /cobe/0.4.0:
-    resolution: {integrity: sha512-Nj2vDav1PKRE4NZeNuEXYe18oGYI1OXNx4UP+9fZMHMwspB0CalG7/T7SwAVWvHahFcrzCpoZu4wHn1ZLA1Ziw==}
+  /cobe/0.4.1:
+    resolution: {integrity: sha512-hXVsSFXUisSQONxkBD5YC+z73ucBCbI/0Jw1h7OOwjo001X93HpSSGkYfoidCruxbNYYss/tpT40RZ8N1VIwhw==}
     dependencies:
       phenomenon: 1.6.0
     dev: false
