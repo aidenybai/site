@@ -14,8 +14,6 @@ export default function Hash() {
           marginRight: 15,
           border: '1px solid #a0afc0',
           borderRadius: 5,
-          fontFamily:
-            'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;',
         }}
         onChange={() => {
           try {
