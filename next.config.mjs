@@ -5,4 +5,15 @@ const withNextra = nextra({
   themeConfig: './theme.config.js',
 });
 
-export default withNextra();
+export default {
+  async redirects() {
+    return [
+      {
+        source: '/yourhours',
+        destination: 'https://yourhours.aidenybai.com',
+        permanent: true,
+      },
+    ];
+  },
+  ...withNextra(),
+};
