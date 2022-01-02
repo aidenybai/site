@@ -10,7 +10,7 @@ export default {
     return [
       {
         source: '/yourhours',
-        destination: 'https://yourhours.aidenybai.com',
+        destination: 'https://yourhours.org',
         permanent: true,
       },
     ];

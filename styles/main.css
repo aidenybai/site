@@ -17,7 +17,17 @@ body {
 }
 
 a {
+  text-underline-position: from-font;
+  text-decoration-skip-ink: all;
+  text-decoration-color: #a5adb1;
+  text-underline-offset: -1px;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  transition: opacity 0.2s ease;
   color: rgba(113, 128, 150, 1) !important;
+}
+a:hover {
+  opacity: 0.85;
 }
 
 b,
