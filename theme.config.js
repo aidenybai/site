@@ -1,5 +1,3 @@
-const age = new Date().getYear() - new Date('Sunday, January 5, 2005').getYear();
-
 export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
@@ -15,18 +13,21 @@ export default {
       </a>
     </small>
   ),
-  head: (
+  head: ({ meta }) => (
     <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="og:title" content="Aiden Bai" />
-      <meta
-        name="og:description"
-        content={`${age} y/o student from Washington State interested in research and open source.`}
-      />
-      <link rel="icon" type="image/png" href="/favicon.png" />
+      {meta.description && <meta name="description" content={meta.description} />}
+      {meta.tag && <meta name="keywords" content={meta.tag} />}
+      {meta.author && <meta name="author" content={meta.author} />}
     </>
   ),
   readMore: '→',
   titleSuffix: null,
   postFooter: null,
+  darkMode: false,
+  navs: [
+    {
+      url: 'https://github.com/shuding/nextra',
+      name: 'Nextra',
+    },
+  ],
 };
