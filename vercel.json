@@ -1,5 +1,12 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/work/million-js",
+      "destination": "https://million.js.org/research",
+      "permanent": true
+    }
+  ]
 }
